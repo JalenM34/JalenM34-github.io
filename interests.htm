@@ -1,47 +1,54 @@
-<!-- =====================================
-     Name: Jalen Mays
-     Lab 2 – Interests Page
-     Description: Two-column layout page
-===================================== -->
-
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Jalen Mays - Interests</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
 
-<body>
+<!-- @author jalen mays, Mays Resume, Portfolio Page
+Southern Illinois University  Developed: Tested: 2-03-26,  Tested: 2-03-26
+-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Personal Portfolio</title> 
+        <link rel="stylesheet" href="style/main.css">
+        <link rel="stylesheet" href="style/slicknav.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+        <script src="js/jquery.slicknav.min.js"></script> 
+        <script type="text/javascript"> 
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"}); 
+            }); 
+        </script>
+        <meta name="description" content="interests"> <meta name="keywords" content="interests, experience, education, resume, Jalen Mays">
+    </head>
+    <body>   
+        <header><h1>Interests</h1>
+           
+        </header> 
+        <nav id="mobile_menu"></nav>
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="index.htm" >Home</a></li>
+                <li><a href="education.htm">Education</a></li>
+                <li><a href="interests.htm"class="current">Interests</a></li>
+                <li><a href="occupation.htm">Occupation</a></li>
+                <li><a href="contact.htm" class="lastitem">Contact</a></li>
+            </ul> 
+        </nav>
+        <h2>This is about my interests</h2>
+        <main>
+            <h2>Education</h2>
+            <h2>1.) SIU</h2>
+            <p class ="first">2022</p>
+        </main>
+        
+        <aside>
+            <h2>Professional</h2>
+            <h2>1.) N/A</h2>
+            <p class ="first">N/A</p>
+        </aside>
+        
+        <footer>
+        <p>This site is about my work and experience</p>
+        </footer>
+        <img src="images/image.png"alt="PP Logo" width="100">
+    </body>
 
-<h1>My Interests</h1>
-
-<div class="container">
-
-    <div class="column">
-        <section>
-            <h2>Hobbies</h2>
-            <p>I enjoy working out, gaming, and creating YouTube content.</p>
-        </section>
-
-        <section>
-            <h2>Projects</h2>
-            <p>I have built websites and completed programming projects in Python and Linux environments.</p>
-        </section>
-    </div>
-
-    <div class="column">
-        <section>
-            <h2>Clubs & Organizations</h2>
-            <p>I am involved in technology-focused student organizations on campus.</p>
-        </section>
-
-        <section>
-            <h2>Career Interests</h2>
-            <p>I am pursuing opportunities in cybersecurity and IT system administration.</p>
-        </section>
-    </div>
-
-</div>
-
-</body>
 </html>
