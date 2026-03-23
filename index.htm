@@ -1,55 +1,87 @@
 <!DOCTYPE html>
-<!-- @author jalen mays, Mays Resume, Portfolio Page
-Southern Illinois University  Developed: 2-03-2026  Tested: 2-03-2026  
--->
+<!-- @author jalen mays, Mays Resume, Portfolio Page -->
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Personal Portfolio</title> 
-        <link rel="stylesheet" href="style/main.css">
-        <link rel="stylesheet" href="style/slicknav.css">
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
-        <script src="js/jquery.slicknav.min.js"></script> 
-        <script type="text/javascript"> 
-            $(document).ready(function(){
-                $('#nav_menu').slicknav({prependTo:"#mobile_menu"}); 
-            }); 
-        </script>
-        <meta name="description" content="Resume"> <meta name="keywords" content="Portfolio, resume, Jalen Mays">
-    </head>
+<head>
+    <meta charset="utf-8">
+    <title>Personal Portfolio</title> 
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+    <script src="js/jquery.slicknav.min.js"></script> 
+
+    <script>
+    $(document).ready(function(){
+        $('#nav_menu').slicknav({prependTo:"#mobile_menu"}); 
+    });
+    </script>
+
+    <meta name="description" content="Resume">
+    <meta name="keywords" content="Portfolio, resume, Jalen Mays">
+
+    <!-- TABLE CSS -->
     <style>
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-  padding: 8px;
-}
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 8px;
+    }
 
-caption {
-  font-weight: bold;
-  margin-bottom: 10px;
-}
+    caption {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
 
-@media (max-width: 470px) {
-  table, thead, tbody, th, td, tr {
-    display: block;
-  }
+    @media (max-width: 470px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
 
-  td {
-    border: none;
-    padding-left: 50%;
-    position: relative;
-  }
+      td {
+        border: none;
+        padding-left: 50%;
+        position: relative;
+      }
 
-  td::before {
-    position: absolute;
-    left: 10px;
-    font-weight: bold;
-  }
-}
-</style>
-     </head>
-    <body> 
-        <h2>My Portfolio Projects</h2>
+      td::before {
+        position: absolute;
+        left: 10px;
+        font-weight: bold;
+      }
+    }
+    </style>
+
+</head>
+
+<body>
+
+<header>
+    <div class="bluetouch">
+        <img src="images/image.png" alt="PP Logo" width="500px">
+    </div>
+
+    <audio controls autoplay loop hidden>
+        <source src="audio/snap.mp3" type="audio/mpeg">
+    </audio>
+</header> 
+
+<nav id="mobile_menu"></nav>
+
+<nav id="nav_menu">
+    <ul>
+        <li><a href="index.htm" class="current">Home</a></li>
+        <li><a href="education.htm">Education</a></li>
+        <li><a href="interests.htm">Interests</a></li>
+        <li><a href="occupation.htm">Occupation</a></li>
+        <li><a href="contact.htm" class="lastitem">Contact</a></li>
+    </ul> 
+</nav>
+
+<h1>Jalen Mays</h1>
+<h2>Personal Portfolio</h2>
+<p>This site is about my work and experience</p>
+
+<!-- ✅ TABLE STARTS HERE -->
+<h2>My Portfolio Projects</h2>
 
 <table>
   <caption>My Portfolio Projects</caption>
@@ -84,42 +116,31 @@ caption {
     </tr>
   </tfoot>
 </table>
-        <header>
-            <div class="bluetouch"><img src="images/image.png" alt="PP Logo" width="500px"></div>
-            <!-- Smooth Audio track -->
-            <audio controls autoplay loop hidden>
-                <source src="audio/snap.mp3" type="audio/mpeg">
-            </audio>
-        </header> 
-        <nav id="mobile_menu"></nav>
-        <nav id="nav_menu">
-            <ul>
-                <li><a href="index.htm" class="current">Home</a></li>
-                <li><a href="education.htm">Education</a></li>
-                <li><a href="interests.htm">Interests</a></li>
-                <li><a href="occupation.htm">Occupation</a></li>
-                <li><a href="contact.htm" class="lastitem">Contact</a></li>
-            </ul> 
-        </nav>
-        <h1>Jalen Mays</h1>
-        <h2>Personal Portfolio</h2>
-        <p>This site is about my work and experience</p>
-        <blockquote>Work Experience, Education, Research Interests</blockquote>
-        <ol>
-            <li>Programming</li>
-            <li>Database</li>
-            <li>AI and ML</li>
-        </ol>
-        <a href="https://www.siu.edu">WWW.SIU.EDU</a>
-        <p>How to contact Jalen Mays &amp; Staff:</p> <address>708-***-****<br>
-        <a href="emailto:owner@pp.com">owner@JalenM34.gitub.com</a> </address>
-        <pre>
+<!-- ✅ TABLE ENDS HERE -->
+
+<blockquote>Work Experience, Education, Research Interests</blockquote>
+
+<ol>
+    <li>Programming</li>
+    <li>Database</li>
+    <li>AI and ML</li>
+</ol>
+
+<a href="https://www.siu.edu">WWW.SIU.EDU</a>
+
+<p>How to contact Jalen Mays &amp; Staff:</p> 
+<address>
+708-***-****<br>
+<a href="mailto:owner@JalenM34.github.com">owner@JalenM34.github.com</a>
+</address>
+
+<pre>
 My Address:
 Jalen Mays
 1263 Lincoln drive
 Carbondale, IL
 62901
-        </pre>
-    </body>
+</pre>
 
+</body>
 </html>
