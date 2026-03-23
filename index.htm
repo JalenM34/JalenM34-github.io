@@ -17,6 +17,37 @@ Southern Illinois University  Developed: 2-03-2026  Tested: 2-03-2026
         </script>
         <meta name="description" content="Resume"> <meta name="keywords" content="Portfolio, resume, Jalen Mays">
     </head>
+    <style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 8px;
+}
+
+caption {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 470px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  td {
+    border: none;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  td::before {
+    position: absolute;
+    left: 10px;
+    font-weight: bold;
+  }
+}
+</style>
+     </head>
     <body> 
         <h2>My Portfolio Projects</h2>
 
