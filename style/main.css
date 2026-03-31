@@ -1,118 +1,219 @@
 /* @author: jalen mays */
-@media only screen and (max-width: 2024px) {
-    #mobile_menu {display: none;}
-}
-@media only screen and (max-width: 959px) {
-    #mobile_menu {display: none;}
-}
+
+/* MOBILE NAVIGATION */
 @media only screen and (max-width: 767px) {
-    #mobile_menu {display: block;}
-    #nav_menu { display: none }
+    #mobile_menu { display: block; }
+    #nav_menu { display: none; }
+
     header h2 { font-size: 1.375em; }
     header h3 { font-size: .8125em; }
-    p { font-size: 875em; }
-    article h1, main h2, aside h2
-    { font-size: 1em; }
+
+    p { font-size: .875em; }
+
+    article h1, main h2, aside h2 {
+        font-size: 1em;
+    }
+
     aside li { font-size: .875em; }
 }
+
 @media only screen and (max-width: 479px) {
-    #mobile_menu {display: block;}
-    #nav_menu { display: none }
+    #mobile_menu { display: block; }
+    #nav_menu { display: none; }
+
     header h2 { font-size: 1.375em; }
     header h3 { font-size: .8125em; }
-    p { font-size: 875em; }
-    article h1, main h2, aside h2
-    { font-size: 1em; }
-    aside li { font-size: .875em; }   
+
+    p { font-size: .875em; }
+
+    article h1, main h2, aside h2 {
+        font-size: 1em;
+    }
+
+    aside li { font-size: .875em; }
 }
-/* the style for the body */
+
+/* BODY */
 body {
-    font-size: 1em;      
+    font-size: 1em;
     width: 90%;
     max-width: 1024px;
     background-color: gray;
     margin: 10px auto;
 }
+
+/* HEADER */
 header {
-    width: 97.917%;              /* 940/960 * 100 */
+    width: 97.917%;
     padding: 10px 1.0417%;
     clear: both;
     font-size: 2em;
 }
+
+/* MAIN + ASIDE */
 main {
-    width: 47.917%;      /* 940/960 * 100 */
-    padding: 10px  1.0417%;
-    background-color: #ffffff; /* this color is for white */
+    width: 47.917%;
+    padding: 10px 1.0417%;
+    background-color: #ffffff;
     float: left;
 }
-aside {
-    width: 47.917%; 
-    padding: 10px  1.0417%;
-    background-color: #ffffff; /* this color is for white */
-    float: right;
-}  
 
+aside {
+    width: 47.917%;
+    padding: 10px 1.0417%;
+    background-color: #ffffff;
+    float: right;
+}
+
+/* HEADINGS */
 h1 {
     font-size: 1.75em;
     padding: 10px;
 }
+
 h2 {
     font-size: 1.5em;
     padding: 10px;
 }
+
 h3 {
     font-size: 1.125em;
     padding: 10px;
 }
+
+/* TEXT */
 p {
     font-size: 1.125em;
     padding-left: 5px;
     padding-right: 5px;
 }
+
+/* BLOCKQUOTE FIXED */
 blockquote {
-    width: 47.917%; 
-    padding: 10px  1.0417%;
-    float: center;
+    width: 47.917%;
+    padding: 10px 1.0417%;
+    margin: 0 auto;
 }
+
+/* FOOTER */
 footer {
     font-size: .75em;
-    width: 97.917%; 
+    width: 97.917%;
     padding: 10px 1.0417%;
     clear: both;
 }
 
-ul {
+/* LISTS */
+ul, li {
     padding-left: 10px;
 }
-li {
-    padding-left: 10px;
-}
+
+/* NAV MENU */
 #nav_menu ul {
     list-style-type: none;
     padding: 1em 0;
     font-size: 1.5em;
     text-align: left;
 }
+
 #nav_menu ul li {
     display: inline;
     padding: 0 1em;
 }
+
 #nav_menu ul li a {
     font-weight: bold;
     color: #ffffff;
 }
+
 #nav_menu ul li a.current {
-    text-decoration: none; 
+    text-decoration: none;
 }
+
+/* IMAGE STYLE */
 .bluetouch img {
     border: 2px solid #B5D3E7;
-    margin: 0;
-    padding: 0;
     border-radius: 50px;
     position: relative;
     right: 10px;
     top: 10px;
 }
-img {
-    position: static;
+
+/* MAIN IMAGE */
+.main-img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+/* TABLE */
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 8px;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+th {
+    background-color: #ddd;
+}
+
+/* RESPONSIVE TABLE */
+@media (max-width: 470px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tr {
+        margin-bottom: 10px;
+        border: 1px solid black;
+    }
+
+    td {
+        border: none;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    td::before {
+        position: absolute;
+        left: 10px;
+        font-weight: bold;
+    }
+
+    td:nth-of-type(1)::before { content: "Project"; }
+    td:nth-of-type(2)::before { content: "Language"; }
+    td:nth-of-type(3)::before { content: "Date"; }
+    td:nth-of-type(4)::before { content: "Role"; }
+    td:nth-of-type(5)::before { content: "Status"; }
+    td:nth-of-type(6)::before { content: "Link"; }
+}
+
+/* INTERESTS PAGE LAYOUT */
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.left, .right {
+    width: 50%;
+}
+
+@media (max-width: 470px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left, .right {
+        width: 100%;
+    }
 }
