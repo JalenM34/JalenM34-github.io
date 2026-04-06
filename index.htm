@@ -19,18 +19,27 @@
 
     <meta name="description" content="Resume">
     <meta name="keywords" content="Portfolio, resume, Jalen Mays">
+
+    <style>
+        /* Rounded corners and responsive main image */
+        .main-img {
+            border-radius: 20px;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 
 <body>
 
 <header>
-    <!-- ✅ FIXED MAIN IMAGE WITH HOVER -->
+    <!-- MAIN IMAGE WITH HOVER -->
     <img src="images/image.png" class="main-img"
          onmouseover="this.src='images/image2.png'"
          onmouseout="this.src='images/image.png'"
          alt="Main Image">
 
-    <!-- ✅ FIXED AUDIO -->
+    <!-- AUTOPLAY AUDIO -->
     <audio autoplay loop muted>
         <source src="audio/snap.mp3" type="audio/mpeg">
     </audio>
@@ -52,7 +61,7 @@
 <h2>Personal Portfolio</h2>
 <p>This site is about my work and experience</p>
 
-<!-- ✅ TABLE -->
+<!-- TABLE -->
 <h2>My Portfolio Projects</h2>
 
 <table>
@@ -112,6 +121,9 @@ Jalen Mays
 Carbondale, IL
 62901
 </pre>
+
+<!-- LINK TO CONTACT FORM (Lab 6) -->
+<p>Fill out my <a href="contact.htm">Contact Form</a> here.</p>
 
 </body>
 </html>
